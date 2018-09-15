@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WhatToDoApp</string>
+    <string name="title_activity_add_todo">AddTodoActivity</string>
+    <string name="action_add">add</string>
+    <string name="action_refresh">refresh</string>
+    <string name="action_logout">logout</string>
+    <string name="action_save">save</string>
+</resources>

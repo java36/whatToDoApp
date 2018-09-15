@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TasksList</string>
+    <string name="title_activity_add_todo">AddTodoActivity</string>
+    <string name="action_add">lägg till</string>
+    <string name="action_refresh">refresh</string>
+    <string name="action_logout">logga ut</string>
+    <string name="action_save">spara</string>
+</resources>
