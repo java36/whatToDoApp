@@ -70,6 +70,7 @@ public class TodoListActivity extends AppCompatActivity {
         } else if (id == R.id.action_add) {
             Intent intent = new Intent(getApplicationContext(), AddTodoActivity.class);
             intent.putExtra("userId", userId);
+            intent.putExtra("name", name);
             startActivityForResult(intent, REQUEST_CODE);
             return true;
         }

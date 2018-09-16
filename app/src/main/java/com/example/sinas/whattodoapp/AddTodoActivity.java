@@ -22,7 +22,8 @@ public class AddTodoActivity extends AppCompatActivity {
 
     private DatabaseHelper databaseHelper;
     private SQLiteDatabase database;
-    Long userId;
+    private Long userId;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class AddTodoActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         userId = intent.getLongExtra("userId", 0L);
+        name = intent.getStringExtra("name");
 
         final EditText contentEditText = findViewById(R.id.content_et);
         Button saveButton = findViewById(R.id.save_btn);
@@ -53,6 +55,7 @@ public class AddTodoActivity extends AppCompatActivity {
                     contentEditText.setText("");
                     Intent intent = new Intent(AddTodoActivity.this, TodoListActivity.class);
                     intent.putExtra("userId", userId);
+                    intent.putExtra("name", name);
                     startActivity(intent);
                 } else {
                     toastMessage("You must write something in the text field!");
